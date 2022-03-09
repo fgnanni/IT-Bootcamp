@@ -1,0 +1,15 @@
+* Passo a Passo
+
+- git init //cria um repositório
+- git config user.name "seunome" // registro de usuário - nome do usuário
+- git config user.email "umnome@umdominio" // registro de usuário - email
+- git remote add origin "link repositório"
+- git add . // adiciona todas as alterações ao repositório local (Stage)
+- git push origin main // envia as alterações para o repositório remoto
+
+* Links para consulta
+
+- https://www.digitalhouse.com/br/blog/principais-comandos-git
+- https://dev.to/davedodea/git--commands-you-need-to-git-going
+- http://ohshitgit.com/
+- http://git-scm.com
