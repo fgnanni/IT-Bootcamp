@@ -8,7 +8,7 @@ public class PraticaExcecoes {
             System.out.println(b / a);
 
         } catch (ArithmeticException error) {
-            throw new ArithmeticException("Ocorreu um erro");
+            throw new IllegalArgumentException("Não pode ser dividido por zero");
 
         } finally {
             System.out.println("Programa finalizado.");
