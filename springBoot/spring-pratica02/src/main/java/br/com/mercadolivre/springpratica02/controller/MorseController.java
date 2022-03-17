@@ -13,7 +13,7 @@ public class MorseController {
     @RequestMapping("/")
     @ResponseBody
     public String mostrarEscrita(@RequestParam String codigoMorse){
-        
+
 
         return Morse.converterMorseParaAlfabetico(codigoMorse);
     }

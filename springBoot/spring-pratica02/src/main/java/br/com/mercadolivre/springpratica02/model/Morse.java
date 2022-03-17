@@ -68,6 +68,7 @@ public class Morse {
         codificadorMorse.put("-.-.--","!");
         codificadorMorse.put(".-.-.-",".");
         codificadorMorse.put("--..--",",");
+        codificadorMorse.put("/"," ");
 
         return codificadorMorse;
     }
