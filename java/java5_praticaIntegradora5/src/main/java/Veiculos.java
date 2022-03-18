@@ -20,4 +20,16 @@ public class Veiculos {
         this.peso = peso;
         this.rodas = rodas;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "velocidade=" + velocidade +
+                ", aceleracao=" + aceleracao +
+                ", anguloDeGiro=" + anguloDeGiro +
+                ", placa='" + placa + '\'' +
+                ", peso=" + peso +
+                ", rodas=" + rodas +
+                '}';
+    }
 }

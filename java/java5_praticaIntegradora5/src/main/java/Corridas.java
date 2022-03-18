@@ -52,6 +52,35 @@ public class Corridas {
         }
     };
 
+    public void defineVencedor(){
+
+        int maiorVelocidade = 0;
+        int calculoVelocidade = 0;
+        int velocidadeProvisoria;
+        int aceleracaoProvisoria;
+        int anguloRotacaoProvisoria;
+        int pesoProvisorio;
+        Veiculos vencedor = null;
+
+        for (Veiculos veiculo: listaDeVeiculos) {
+        
+            velocidadeProvisoria = veiculo.getVelocidade();
+            aceleracaoProvisoria = veiculo.getAceleracao();
+            anguloRotacaoProvisoria = veiculo.getAnguloDeGiro();
+            pesoProvisorio = veiculo.getPeso();
+
+            calculoVelocidade = velocidadeProvisoria * 1 / 2 * aceleracaoProvisoria / (anguloRotacaoProvisoria * (pesoProvisorio - veiculo.getRodas() * 100));
+            
+            if(calculoVelocidade > maiorVelocidade){
+                vencedor = veiculo;
+                maiorVelocidade = calculoVelocidade;
+            }
+            
+        }
+
+        System.out.println("O piloto vencedor é " + vencedor.getClass().getSimpleName()  + vencedor.toString() + "totalizando uma velocidade de " + maiorVelocidade);
+
+    }
 
 
 }
