@@ -21,7 +21,7 @@ public class PersonagemService {
 
     public List<Personagem> filtrarPorNome(String nomePersonagem){
 
-        return personagens.stream().filter(nome -> nome.getName().toUpperCase().contains(nomePersonagem)).collect(Collectors.toList());
+        return personagens.stream().filter(nome -> nome.getName().startsWith(nomePersonagem)).collect(Collectors.toList());
     }
 
     public List<Personagem> salvar(List<Personagem> listaPersonagens) {
